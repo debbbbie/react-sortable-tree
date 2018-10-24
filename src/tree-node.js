@@ -139,7 +139,7 @@ class TreeNode extends Component {
       style = { right: scaffoldBlockPxWidth * scaffoldBlockCount };
     } else {
       // Default ltr
-      style = { left: scaffoldBlockPxWidth * scaffoldBlockCount };
+      style = { left: scaffoldBlockPxWidth * scaffoldBlockCount, width: `calc(100% - ${scaffoldBlockPxWidth * scaffoldBlockCount}px)` };
     }
 
     return connectDropTarget(
